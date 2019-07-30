@@ -1,0 +1,3 @@
+br\com\bdd\runner\TesteRunner.class
+br\com\bdd\config\hooks.class
+br\com\bdd\steps\google.class
