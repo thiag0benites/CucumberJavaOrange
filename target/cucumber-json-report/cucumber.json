@@ -9,7 +9,7 @@
     "line": 3,
     "elements": [
       {
-        "line": 6,
+        "line": 8,
         "name": "",
         "description": "",
         "type": "background",
@@ -17,10 +17,10 @@
         "steps": [
           {
             "result": {
-              "duration": 4216070756,
+              "duration": 6515797614,
               "status": "passed"
             },
-            "line": 7,
+            "line": 9,
             "name": "que acesso a url \"https://opensource-demo.orangehrmlive.com/\"",
             "match": {
               "arguments": [
@@ -39,7 +39,7 @@
         "before": [
           {
             "result": {
-              "duration": 12738124510,
+              "duration": 11475913728,
               "status": "passed"
             },
             "match": {
@@ -47,14 +47,14 @@
             }
           }
         ],
-        "line": 10,
-        "name": "CT01_busca_google",
+        "line": 12,
+        "name": "CT01_Login_com_dados_corretos",
         "description": "",
-        "id": "testes-basicos-no-google;ct01-busca-google",
+        "id": "testes-de-login;ct01-login-com-dados-corretos",
         "after": [
           {
             "result": {
-              "duration": 811976342,
+              "duration": 966582189,
               "status": "passed"
             },
             "match": {
@@ -67,11 +67,11 @@
         "steps": [
           {
             "result": {
-              "duration": 255809651,
+              "duration": 368781146,
               "status": "passed"
             },
-            "line": 11,
-            "name": "digito o usuario e senha corretamente",
+            "line": 13,
+            "name": "digito o usuario e senha",
             "match": {
               "location": "login.digito_o_usuario_e_senha_corretamente(DataTable)"
             },
@@ -81,17 +81,17 @@
                   "Admin",
                   "admin123"
                 ],
-                "line": 12
+                "line": 14
               }
             ],
             "keyword": "Dado "
           },
           {
             "result": {
-              "duration": 1576412209,
+              "duration": 6033844478,
               "status": "passed"
             },
-            "line": 13,
+            "line": 15,
             "name": "clico em login",
             "match": {
               "location": "login.clico_em_login()"
@@ -100,10 +100,10 @@
           },
           {
             "result": {
-              "duration": 116112970,
+              "duration": 92810555,
               "status": "passed"
             },
-            "line": 14,
+            "line": 16,
             "name": "acesso o sistema com sucesso",
             "match": {
               "location": "login.acesso_o_sistema_com_sucesso()"
@@ -113,15 +113,479 @@
         ],
         "tags": [
           {
-            "line": 9,
+            "line": 11,
             "name": "@CT01"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 6054002020,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que acesso a url \"https://opensource-demo.orangehrmlive.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://opensource-demo.orangehrmlive.com/",
+                  "offset": 18
+                }
+              ],
+              "location": "login.que_acesso_a_url(String)"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3655043086,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.ConfiguracaoInicial()"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "CT02_Login_com_senha_incorreta",
+        "description": "",
+        "id": "testes-de-login;ct02-login-com-senha-incorreta",
+        "after": [
+          {
+            "result": {
+              "duration": 739101312,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.FecharJanela()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 258235609,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "digito o usuario e senha",
+            "match": {
+              "location": "login.digito_o_usuario_e_senha_corretamente(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Admin",
+                  "admin125"
+                ],
+                "line": 21
+              }
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 902737387,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "clico em login",
+            "match": {
+              "location": "login.clico_em_login()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 150867039,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "valido a mensagem de erro \"Invalid credentials\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Invalid credentials",
+                  "offset": 27
+                }
+              ],
+              "location": "login.valido_a_mensagem_de_erro(String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 18,
+            "name": "@CT02"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 4535849433,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que acesso a url \"https://opensource-demo.orangehrmlive.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://opensource-demo.orangehrmlive.com/",
+                  "offset": 18
+                }
+              ],
+              "location": "login.que_acesso_a_url(String)"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3788899722,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.ConfiguracaoInicial()"
+            }
+          }
+        ],
+        "line": 26,
+        "name": "CT03_Login_com_senha_em_branco",
+        "description": "",
+        "id": "testes-de-login;ct03-login-com-senha-em-branco",
+        "after": [
+          {
+            "result": {
+              "duration": 785327050,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.FecharJanela()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 263547419,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "digito o usuario e senha",
+            "match": {
+              "location": "login.digito_o_usuario_e_senha_corretamente(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Admin",
+                  ""
+                ],
+                "line": 28
+              }
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 130518819,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "clico em login",
+            "match": {
+              "location": "login.clico_em_login()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 110516840,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "valido a mensagem de erro \"Password cannot be empty\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Password cannot be empty",
+                  "offset": 27
+                }
+              ],
+              "location": "login.valido_a_mensagem_de_erro(String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 25,
+            "name": "@CT03"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 3862790822,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que acesso a url \"https://opensource-demo.orangehrmlive.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://opensource-demo.orangehrmlive.com/",
+                  "offset": 18
+                }
+              ],
+              "location": "login.que_acesso_a_url(String)"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3677319990,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.ConfiguracaoInicial()"
+            }
+          }
+        ],
+        "line": 33,
+        "name": "CT04_Login_com_usuario_em_branco",
+        "description": "",
+        "id": "testes-de-login;ct04-login-com-usuario-em-branco",
+        "after": [
+          {
+            "result": {
+              "duration": 713318945,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.FecharJanela()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 228410859,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "digito o usuario e senha",
+            "match": {
+              "location": "login.digito_o_usuario_e_senha_corretamente(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "",
+                  "admin125"
+                ],
+                "line": 35
+              }
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 94585941,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "clico em login",
+            "match": {
+              "location": "login.clico_em_login()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 101111674,
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "valido a mensagem de erro \"Username cannot be empty\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Username cannot be empty",
+                  "offset": 27
+                }
+              ],
+              "location": "login.valido_a_mensagem_de_erro(String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 32,
+            "name": "@CT04"
+          }
+        ]
+      },
+      {
+        "line": 8,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Contexto",
+        "steps": [
+          {
+            "result": {
+              "duration": 6494166373,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que acesso a url \"https://opensource-demo.orangehrmlive.com/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://opensource-demo.orangehrmlive.com/",
+                  "offset": 18
+                }
+              ],
+              "location": "login.que_acesso_a_url(String)"
+            },
+            "keyword": "Dado "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3727361562,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.ConfiguracaoInicial()"
+            }
+          }
+        ],
+        "line": 40,
+        "name": "CT05_Login_com_usuario_e_senha_em_branco",
+        "description": "",
+        "id": "testes-de-login;ct05-login-com-usuario-e-senha-em-branco",
+        "after": [
+          {
+            "result": {
+              "duration": 721454684,
+              "status": "passed"
+            },
+            "match": {
+              "location": "hooks.FecharJanela()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Cenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 230163968,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "digito o usuario e senha",
+            "match": {
+              "location": "login.digito_o_usuario_e_senha_corretamente(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "",
+                  ""
+                ],
+                "line": 42
+              }
+            ],
+            "keyword": "Dado "
+          },
+          {
+            "result": {
+              "duration": 111759082,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "clico em login",
+            "match": {
+              "location": "login.clico_em_login()"
+            },
+            "keyword": "E "
+          },
+          {
+            "result": {
+              "duration": 95518188,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "valido a mensagem de erro \"Username cannot be empty\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Username cannot be empty",
+                  "offset": 27
+                }
+              ],
+              "location": "login.valido_a_mensagem_de_erro(String)"
+            },
+            "keyword": "Entao "
+          }
+        ],
+        "tags": [
+          {
+            "line": 39,
+            "name": "@CT05"
           }
         ]
       }
     ],
-    "name": "Testes basicos no google",
-    "description": "Este arquivo contempla testes do google",
-    "id": "testes-basicos-no-google",
+    "name": "Testes de login",
+    "description": "Como um usuário\nEu quero realizar login no sistema\nDe modo seguro",
+    "id": "testes-de-login",
     "keyword": "Funcionalidade",
     "uri": "login.feature",
     "tags": [

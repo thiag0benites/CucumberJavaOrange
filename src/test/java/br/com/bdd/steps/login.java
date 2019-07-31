@@ -1,5 +1,6 @@
 package br.com.bdd.steps;
 
+import static org.junit.Assert.assertEquals;
 
 import java.util.List;
 
@@ -29,7 +30,7 @@ public class login {
 		driver.navigate().to(url);
 	}
 
-	@Dado("^digito o usuario e senha corretamente$")
+	@Dado("^digito o usuario e senha$")
 	public void digito_o_usuario_e_senha_corretamente(DataTable dt) throws Throwable {
 		List<String> data = dt.asList(String.class);
 		driver.findElement(By.id("txtUsername")).sendKeys(data.get(0));
@@ -45,5 +46,14 @@ public class login {
 	public void acesso_o_sistema_com_sucesso() throws Throwable {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("welcome")));
+	}
+	
+	@Entao("^valido a mensagem de erro \"([^\"]*)\"$")
+	public void valido_a_mensagem_de_erro(String ExpectedMsg) throws Throwable {
+		WebDriverWait wait = new WebDriverWait(driver, 5);
+		wait.until(ExpectedConditions.elementToBeClickable(By.id("spanMessage")));
+		
+		String CurrentMsg = driver.findElement(By.id("spanMessage")).getText();
+		assertEquals(CurrentMsg, ExpectedMsg);
 	}
 }
