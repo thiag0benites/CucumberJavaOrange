@@ -51,8 +51,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                6,
-                3,
+                20,
+                0,
                 0,
                 0,
                 0
@@ -94,7 +94,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 9) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 20) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -107,8 +107,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                0,
-                3
+                5,
+                0
             ],
             backgroundColor: [
                 "#00B000",
@@ -144,7 +144,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 3) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 5) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -157,8 +157,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   0,
-                   1
+                   1,
+                   0
                ],
                backgroundColor: [
                 "#00B000",
@@ -234,7 +234,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumber-jvm-example</td>
               <td>1</td>
-            <td>30 Jul 2019, 16:07</td>
+            <td>30 Jul 2019, 23:13</td>
     </tr>
   </tbody>
 </table>
@@ -329,54 +329,54 @@ $(document).ready(function() {
 
   <tbody>
           <tr>
-        <td class="tagname"><a href="report-feature_120234048.html">Testes basicos no google</a></td>
+        <td class="tagname"><a href="report-feature_3035693424.html">Testes de login</a></td>
 
-        <td      class="passed"    >6</td>
-        <td      class="failed"    >3</td>
+        <td      class="passed"    >20</td>
         <td >0</td>
         <td >0</td>
         <td >0</td>
-        <td class="total">9</td>
+        <td >0</td>
+        <td class="total">20</td>
 
+        <td  class="passed"    >5</td>
         <td >0</td>
-        <td  class="failed"    >3</td>
-        <td class="total">3</td>
+        <td class="total">5</td>
 
-        <td class="duration" data-value="34477286826">34.477</td>
-        <td class="failed">Failed</td>
+        <td class="duration" data-value="26034023073">26.034</td>
+        <td class="passed">Passed</td>
       </tr>
       </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
-      <td>6</td>
-      <td>3</td>
+      <td>20</td>
       <td>0</td>
       <td>0</td>
       <td>0</td>
-      <td>9</td>
+      <td>0</td>
+      <td>20</td>
 
+      <td>5</td>
       <td>0</td>
-      <td>3</td>
-      <td>3</td>
+      <td>5</td>
 
-      <td class="duration">34.477</td>
+      <td class="duration">26.034</td>
       <td>1</td>
     </tr>
     <tr>
       <td></td>
-            <td>66.67%</td>
-      <td>33.33%</td>
+            <td>100.00%</td>
+      <td>0.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>0.00%</td>
       <td>100.00%</td>
-      <td></td>
-      <td></td>
       <td>0.00%</td>
+      <td></td>
+      <td></td>
+      <td>100.00%</td>
     </tr>
   </tfoot>
 </table>

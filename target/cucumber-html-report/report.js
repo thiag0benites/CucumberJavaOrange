@@ -19,7 +19,7 @@ formatter.feature({
   ]
 });
 formatter.before({
-  "duration": 11475913728,
+  "duration": 4935662455,
   "status": "passed"
 });
 formatter.background({
@@ -44,7 +44,7 @@ formatter.match({
   "location": "login.que_acesso_a_url(String)"
 });
 formatter.result({
-  "duration": 6515797614,
+  "duration": 4998999032,
   "status": "passed"
 });
 formatter.scenario({
@@ -63,7 +63,7 @@ formatter.scenario({
 });
 formatter.step({
   "line": 13,
-  "name": "digito o usuario e senha",
+  "name": "que digito o usuario e senha",
   "rows": [
     {
       "cells": [
@@ -89,29 +89,31 @@ formatter.match({
   "location": "login.digito_o_usuario_e_senha_corretamente(DataTable)"
 });
 formatter.result({
-  "duration": 368781146,
+  "duration": 234046257,
   "status": "passed"
 });
 formatter.match({
   "location": "login.clico_em_login()"
 });
 formatter.result({
-  "duration": 6033844478,
+  "duration": 1406661209,
   "status": "passed"
 });
 formatter.match({
   "location": "login.acesso_o_sistema_com_sucesso()"
 });
 formatter.result({
-  "duration": 92810555,
+  "duration": 100963285,
   "status": "passed"
 });
+formatter.write("Cenario Passou");
+formatter.embedding("image/png", "embedded0.png");
 formatter.after({
-  "duration": 966582189,
+  "duration": 2262105437,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3655043086,
+  "duration": 3651343169,
   "status": "passed"
 });
 formatter.background({
@@ -136,7 +138,7 @@ formatter.match({
   "location": "login.que_acesso_a_url(String)"
 });
 formatter.result({
-  "duration": 6054002020,
+  "duration": 4176584085,
   "status": "passed"
 });
 formatter.scenario({
@@ -155,7 +157,7 @@ formatter.scenario({
 });
 formatter.step({
   "line": 20,
-  "name": "digito o usuario e senha",
+  "name": "que digito o usuario e senha",
   "rows": [
     {
       "cells": [
@@ -181,14 +183,14 @@ formatter.match({
   "location": "login.digito_o_usuario_e_senha_corretamente(DataTable)"
 });
 formatter.result({
-  "duration": 258235609,
+  "duration": 205275336,
   "status": "passed"
 });
 formatter.match({
   "location": "login.clico_em_login()"
 });
 formatter.result({
-  "duration": 902737387,
+  "duration": 919554847,
   "status": "passed"
 });
 formatter.match({
@@ -201,15 +203,17 @@ formatter.match({
   "location": "login.valido_a_mensagem_de_erro(String)"
 });
 formatter.result({
-  "duration": 150867039,
+  "duration": 106279249,
   "status": "passed"
 });
+formatter.write("Cenario Passou");
+formatter.embedding("image/png", "embedded1.png");
 formatter.after({
-  "duration": 739101312,
+  "duration": 974799863,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3788899722,
+  "duration": 3579771926,
   "status": "passed"
 });
 formatter.background({
@@ -234,7 +238,7 @@ formatter.match({
   "location": "login.que_acesso_a_url(String)"
 });
 formatter.result({
-  "duration": 4535849433,
+  "duration": 3208277860,
   "status": "passed"
 });
 formatter.scenario({
@@ -253,7 +257,7 @@ formatter.scenario({
 });
 formatter.step({
   "line": 27,
-  "name": "digito o usuario e senha",
+  "name": "que digito o usuario e senha",
   "rows": [
     {
       "cells": [
@@ -279,14 +283,14 @@ formatter.match({
   "location": "login.digito_o_usuario_e_senha_corretamente(DataTable)"
 });
 formatter.result({
-  "duration": 263547419,
+  "duration": 162517302,
   "status": "passed"
 });
 formatter.match({
   "location": "login.clico_em_login()"
 });
 formatter.result({
-  "duration": 130518819,
+  "duration": 80199348,
   "status": "passed"
 });
 formatter.match({
@@ -299,15 +303,17 @@ formatter.match({
   "location": "login.valido_a_mensagem_de_erro(String)"
 });
 formatter.result({
-  "duration": 110516840,
+  "duration": 91624950,
   "status": "passed"
 });
+formatter.write("Cenario Passou");
+formatter.embedding("image/png", "embedded2.png");
 formatter.after({
-  "duration": 785327050,
+  "duration": 957480221,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3677319990,
+  "duration": 3660018849,
   "status": "passed"
 });
 formatter.background({
@@ -332,7 +338,7 @@ formatter.match({
   "location": "login.que_acesso_a_url(String)"
 });
 formatter.result({
-  "duration": 3862790822,
+  "duration": 5068441851,
   "status": "passed"
 });
 formatter.scenario({
@@ -351,7 +357,7 @@ formatter.scenario({
 });
 formatter.step({
   "line": 34,
-  "name": "digito o usuario e senha",
+  "name": "que digito o usuario e senha",
   "rows": [
     {
       "cells": [
@@ -377,14 +383,14 @@ formatter.match({
   "location": "login.digito_o_usuario_e_senha_corretamente(DataTable)"
 });
 formatter.result({
-  "duration": 228410859,
+  "duration": 200090393,
   "status": "passed"
 });
 formatter.match({
   "location": "login.clico_em_login()"
 });
 formatter.result({
-  "duration": 94585941,
+  "duration": 90231676,
   "status": "passed"
 });
 formatter.match({
@@ -397,15 +403,17 @@ formatter.match({
   "location": "login.valido_a_mensagem_de_erro(String)"
 });
 formatter.result({
-  "duration": 101111674,
+  "duration": 84990096,
   "status": "passed"
 });
+formatter.write("Cenario Passou");
+formatter.embedding("image/png", "embedded3.png");
 formatter.after({
-  "duration": 713318945,
+  "duration": 975524819,
   "status": "passed"
 });
 formatter.before({
-  "duration": 3727361562,
+  "duration": 3734901855,
   "status": "passed"
 });
 formatter.background({
@@ -430,7 +438,7 @@ formatter.match({
   "location": "login.que_acesso_a_url(String)"
 });
 formatter.result({
-  "duration": 6494166373,
+  "duration": 4527700479,
   "status": "passed"
 });
 formatter.scenario({
@@ -449,7 +457,7 @@ formatter.scenario({
 });
 formatter.step({
   "line": 41,
-  "name": "digito o usuario e senha",
+  "name": "que digito o usuario e senha",
   "rows": [
     {
       "cells": [
@@ -475,14 +483,14 @@ formatter.match({
   "location": "login.digito_o_usuario_e_senha_corretamente(DataTable)"
 });
 formatter.result({
-  "duration": 230163968,
+  "duration": 173695212,
   "status": "passed"
 });
 formatter.match({
   "location": "login.clico_em_login()"
 });
 formatter.result({
-  "duration": 111759082,
+  "duration": 95708867,
   "status": "passed"
 });
 formatter.match({
@@ -495,11 +503,13 @@ formatter.match({
   "location": "login.valido_a_mensagem_de_erro(String)"
 });
 formatter.result({
-  "duration": 95518188,
+  "duration": 102181739,
   "status": "passed"
 });
+formatter.write("Cenario Passou");
+formatter.embedding("image/png", "embedded4.png");
 formatter.after({
-  "duration": 721454684,
+  "duration": 974031485,
   "status": "passed"
 });
 });

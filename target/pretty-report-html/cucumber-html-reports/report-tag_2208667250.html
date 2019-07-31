@@ -77,7 +77,7 @@ $(document).ready(function() {
     <tr class="info">
       <td>cucumber-jvm-example</td>
               <td>1</td>
-            <td>30 Jul 2019, 16:07</td>
+            <td>30 Jul 2019, 23:13</td>
     </tr>
   </tbody>
 </table>
@@ -130,19 +130,19 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@CT02</td>
-          <td      class="passed"    >1</td>
-          <td      class="failed"    >1</td>
+          <td      class="passed"    >3</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
-          <td class="total">2</td>
+          <td >0</td>
+          <td class="total">3</td>
 
+          <td  class="passed"    >1</td>
           <td >0</td>
-          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="8813344907">8.813</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="1231109432">1.231</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -174,7 +174,7 @@ $(document).ready(function() {
 <div class="element">
       <div class="indention">
       <b>Feature:</b>
-      <a href="report-feature_120234048.html">Testes basicos no google</a>
+      <a href="report-feature_3035693424.html">Testes de login</a>
     </div>
   
   
@@ -184,14 +184,14 @@ $(document).ready(function() {
       </div>
 
   
-  <span class="lead-duration duration">8.813</span>
+  <span class="lead-duration duration">1.231</span>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
     
-<div class="brief failed">
-  <span class="keyword indention">Scenario</span>
-  <span class="name">CT02_busca_google</span>
+<div class="brief passed">
+  <span class="keyword indention">Cenario</span>
+  <span class="name">CT02_Login_com_senha_incorreta</span>
   
 
        <i class="chevron fa fa-fw"></i>
@@ -200,7 +200,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-element-before">
         <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
@@ -219,9 +219,9 @@ $(document).ready(function() {
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">Before</span>
-                          <span class="location name">hooks.ConfiguracaoInicial()</span>
+                          <span class="location name">hooks.ConfiguracaoInicial(Scenario)</span>
                         
-  <span class="lead-duration duration">4.999</span>
+  <span class="lead-duration duration">3.651</span>
 
           </div>
 
@@ -239,9 +239,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -251,14 +251,45 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
-  <span class="keyword indention">Given</span>
-  <span class="name">digito o valor &quot;<span class="argument">l&iacute;via</span>&quot;</span>
+  <span class="keyword indention">Dado</span>
+  <span class="name">que digito o usuario e senha</span>
   
-  <span class="lead-duration duration">0.246</span>
+  <span class="lead-duration duration">0.205</span>
+
+</div>
+
+        
+
+        
+
+
+                  <table class="step-arguments">
+                          <tr>
+                                  <td>Admin</td>
+                                  <td>admin125</td>
+                              </tr>
+                      </table>
+        
+        
+
+        
+
+        
+  
+        
+
+      </div>
+          <div class="step">
+        
+<div class="brief passed">
+  <span class="keyword indention">E</span>
+  <span class="name">clico em login</span>
+  
+  <span class="lead-duration duration">0.919</span>
 
 </div>
 
@@ -279,11 +310,11 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief failed">
-  <span class="keyword indention">Then</span>
-  <span class="name">apresenta a lista de busca</span>
+<div class="brief passed">
+  <span class="keyword indention">Entao</span>
+  <span class="name">valido a mensagem de erro &quot;<span class="argument">Invalid credentials</span>&quot;</span>
   
-  <span class="lead-duration duration">8.566</span>
+  <span class="lead-duration duration">0.106</span>
 
 </div>
 
@@ -291,31 +322,40 @@ $(document).ready(function() {
 
         
 
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-4">
-          <a>java.lang.AssertionError</a>
+
+        
+        
+
+        
+  <div class="outputs inner-level">
+          <div class="output indention">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#output-4">
+          Output 1
+          <i class="chevron fa fa-fw"></i>
+        </div>
+        <div id="output-4" class="collapse collapsable-details " >
+          
+          <pre><p>Cenario Passou</p></pre>
+        </div>
       </div>
-      <div id="msg-4" class="collapse collapsable-details  in ">
-        <pre>java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertFalse(Assert.java:64)
-	at org.junit.Assert.assertFalse(Assert.java:74)
-	at br.com.bdd.steps.google.apresenta_a_lista_de_busca(google.java:40)
-	at &#10045;.Then apresenta a lista de busca(google.feature:16)
-</pre>
+      </div>
+
+        
+    <div class="embeddings inner-level">
+                    <div class="embedding indention">
+        <div data-toggle="collapse" data-target="#embedding-5" class="collapsable-control">
+      <a>Attachment 1 (png)</a>
+      <a href="embeddings/embedding_-296380267.png" download target="_blank">
+        <span class="download-button glyphicon glyphicon-download-alt"></span>
+      </a>
+    </div>
+    <div id="embedding-5" class="collapse collapsable-details">
+      <div class="embedding-content">
+        <img src="embeddings/embedding_-296380267.png">
       </div>
     </div>
   </div>
-
-
-        
-        
-
-        
-
-        
+            </div>
   
         
 
@@ -326,7 +366,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-element-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-6">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -338,13 +378,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-6" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">hooks.FecharJanela()</span>
                         
-  <span class="lead-duration duration">1.053</span>
+  <span class="lead-duration duration">0.974</span>
 
           </div>
 

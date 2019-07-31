@@ -10,8 +10,8 @@ import cucumber.api.junit.Cucumber;
 		features= {"src/test/resources/features/"}, //Caminho dos arquivos features
 		plugin = {"pretty", "html:target/cucumber-html-report", "json:target/cucumber-json-report/cucumber.json"}, //Cria e aponta onde o relatório será salvo
 		glue= {""} //Responsavel pela execução via junit
-		/*monochrome = true, 
-		dryRun = false*/
+		//monochrome = false,
+		//dryRun = false
 		)
 
 public class TesteRunner {
