@@ -30,8 +30,9 @@ public class login {
 		driver.navigate().to(url);
 	}
 
-	@Dado("^digito o usuario e senha$")
+	@Dado("^que digito o usuario e senha$")
 	public void digito_o_usuario_e_senha_corretamente(DataTable dt) throws Throwable {
+		System.out.println("Dado que digito o usuario e senha");
 		List<String> data = dt.asList(String.class);
 		driver.findElement(By.id("txtUsername")).sendKeys(data.get(0));
 		driver.findElement(By.id("txtPassword")).sendKeys(data.get(1));
@@ -39,17 +40,21 @@ public class login {
 
 	@E("^clico em login$")
 	public void clico_em_login() throws Throwable {
+		System.out.println("E clico em login");
 		driver.findElement(By.id("btnLogin")).click();
 	}
 
 	@Entao("^acesso o sistema com sucesso$")
 	public void acesso_o_sistema_com_sucesso() throws Throwable {
+		System.out.println("Entao acesso o sistema com sucesso");
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("welcome")));
 	}
 	
 	@Entao("^valido a mensagem de erro \"([^\"]*)\"$")
 	public void valido_a_mensagem_de_erro(String ExpectedMsg) throws Throwable {
+		System.out.println("Entao valido a mensagem de erro " + ExpectedMsg);
+		
 		WebDriverWait wait = new WebDriverWait(driver, 5);
 		wait.until(ExpectedConditions.elementToBeClickable(By.id("spanMessage")));
 		
