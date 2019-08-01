@@ -1,5 +1,7 @@
 package br.com.bdd.config;
 
+import java.util.concurrent.TimeUnit;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -10,19 +12,19 @@ import cucumber.api.java.After;
 import cucumber.api.java.Before;
 
 public class hooks {
-	
 	private Scenario scenario;
 	private static WebDriver driver;
 	
 	@Before
 	public void ConfiguracaoInicial(Scenario scenario) {
 		this.scenario = scenario;
+		
+		System.out.println("*** Iniciando Teste ***");
 		System.out.println("Executando cenario " + scenario.getName());
-		System.out.println("***************************************************");
-		System.out.println("                 Iniciando Teste"                   );
-		System.out.println("***************************************************");
+		
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
 	@After
@@ -38,9 +40,7 @@ public class hooks {
 		
 		scenario.embed(((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES), "image/png");
 		
-		System.out.println("***************************************************");
-		System.out.println("                 Finalizando Teste                 ");
-		System.out.println("***************************************************");
+		System.out.println("*** Fim dos testes ***");
 		driver.quit();	
 	}
 	

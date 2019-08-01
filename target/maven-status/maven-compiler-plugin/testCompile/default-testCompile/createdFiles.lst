@@ -1,3 +1,4 @@
 br\com\bdd\runner\TesteRunner.class
 br\com\bdd\config\hooks.class
 br\com\bdd\steps\login.class
+br\com\bdd\pages\LoginPage.class
